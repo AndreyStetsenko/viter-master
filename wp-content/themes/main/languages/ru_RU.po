@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ru_RU\n"
+"POT-Creation-Date: 2019-08-06 14:52+0300\n"
+"PO-Revision-Date: 2019-08-06 14:52+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: fonts\n"
+"X-Poedit-SearchPathExcluded-1: js\n"
+
+#: 404.php:7
+msgid "Сторінку не знайдено"
+msgstr "Страницу не найдено"
+
+#: 404.php:8
+msgid "На головну"
+msgstr "На главную"
+
+#: footer.php:40
+msgid "Виберіть ваше місто"
+msgstr "Выберите свой город"
+
+#: footer.php:41
+msgid "Вкажіть назву міста"
+msgstr "Введите название города"
+
+#: header.php:22 header.php:24
+msgid "Київ"
+msgstr "Киев"
+
+#: header.php:87 header.php:89 inc/h-block.php:28 inc/h-block.php:30
+msgid "Всі типи"
+msgstr "Все типы"
+
+#: header.php:109 inc/h-block.php:53
+msgid "Особистий кабінет"
+msgstr "Личный кабинет"
+
+#: inc/cpt.php:7
+msgid "Події"
+msgstr "События"
+
+#: inc/event-loop-ajax.php:41 inc/ticket-item.php:40
+msgid "Купити"
+msgstr "Купить"
+
+#: inc/event-loop-ajax.php:42 inc/ticket-item.php:41
+msgid "Квиток"
+msgstr "Билет"
+
+#: inc/home-events.php:15 taxonomy.php:16
+msgid "Показати ще"
+msgstr "Показать больше"
+
+#: inc/home-sort.php:6
+msgid "Вибачте, на обрану дату подій немає"
+msgstr "К сожалению на выбранную дату нет событий"
+
+#: inc/home-sort.php:9
+msgid "Будь-яка дата"
+msgstr "Любая дата"
+
+#: inc/home-sort.php:12
+msgid "Сьогодні"
+msgstr "Сегодня"
+
+#: inc/home-sort.php:15
+msgid "На вихідних"
+msgstr "На выходных"
+
+#: inc/home-sort.php:19 inc/home-sort.php:25
+msgid "Знайти зал"
+msgstr "Найти зал"
+
+#: inc/mobile-menu.php:16
+msgid "Вхід"
+msgstr "Вход"
+
+#: inc/mobile-menu.php:23
+msgid "Місто"
+msgstr "Город"
+
+#: inc/mobile-menu.php:31
+msgid "Категорії"
+msgstr "Категории"
+
+#: search.php:6
+msgid "Пошук за запитом"
+msgstr "Поиск по запросу"
+
+#: search.php:18
+msgid "По вашому запиту нічого не знайдено"
+msgstr "Ничего не было найдено по вашему запросу"
+
+#: searchform.php:3
+msgid "Пошук..."
+msgstr "Поиск"
+
+#: single-events.php:30 single.php:20
+msgid "грн"
+msgstr "грн"
+
+#: single-events.php:53 single-events.php:108
+msgid "Купити квиток"
+msgstr "Купить билет"
+
+#: single-events.php:59
+msgid "До події лишилось"
+msgstr "До события осталось"
+
+#: single-events.php:62
+msgid "днів"
+msgstr "дней"
+
+#: single-events.php:63
+msgid "годин"
+msgstr "часов"
+
+#: single-events.php:64
+msgid "хвилин"
+msgstr "минут"
+
+#: single-events.php:70
+msgid "Поділитися в соц. мережах"
+msgstr "Поделиться в соц. сетях"
+
+#: single-events.php:91
+msgid "Квитки на"
+msgstr "Билеты на"
+
+#: taxonomy.php:19
+msgid "Немає записів"
+msgstr "Нет записей"
+
+#~ msgid "Доброго дня"
+#~ msgstr "Здравствуйте"
+
+#~ msgid "зайдіть в кабінет"
+#~ msgstr "войдите в кабинет"
+
+#~ msgid "знайдено"
+#~ msgstr "найдено"
+
+#~ msgid "збіги"
+#~ msgstr "совпадения"
+
+#~ msgid "Всі площадки"
+#~ msgstr "Все площадки"
+
+#~ msgid "Вибрати дату"
+#~ msgstr "Выбрать дату"
+
+#, fuzzy
+#~| msgid "Поиск"
+#~ msgid "Поиск..."
+#~ msgstr "Пошук"
+
+#~ msgid "совпадения"
+#~ msgstr "результатів"
+
+#~ msgid "Музыка"
+#~ msgstr "Музика"
+
+#~ msgid "Интервью"
+#~ msgstr "Інтерв'ю"
+
+#~ msgid "Зараз в ефірі"
+#~ msgstr "Сейчас в ефире"
+
+#~ msgid "Більше програм"
+#~ msgstr "Больше программ"
+
+#~ msgid "Ведучий"
+#~ msgstr "Ведущий"
+
+#~ msgid "Сейчас в эфире"
+#~ msgstr "Зараз в ефірі"
+
+#~ msgid "Правила использования"
+#~ msgstr "Умови використання"
+
+#~ msgid "Контакты"
+#~ msgstr "Контакти"
+
+#~ msgid "Социальные сети"
+#~ msgstr "Соціальні мережі"
+
+#~ msgid "Новости по теме"
+#~ msgstr "Новини по темі"
+
+#~ msgid "Все права защищены"
+#~ msgstr "Всі права застережені"
+
+#~ msgid "Дни"
+#~ msgstr "Дні"
+
+#~ msgid "Часы"
+#~ msgstr "Години"
+
+#~ msgid "Минуты"
+#~ msgstr "Хвилини"
+
+#~ msgid "Секунды"
+#~ msgstr "Секунди"
+
+#~ msgid "Участники"
+#~ msgstr "Учасники"
+
+#~ msgid "Фестиваль"
+#~ msgstr "Фестиваль"
+
+#~ msgid "Расписание"
+#~ msgstr "Розклад"
+
+#~ msgid "Галерея"
+#~ msgstr "Галерея"
+
+#~ msgid "Партнеры"
+#~ msgstr "Партнери"
+
+#~ msgid "Пусто :("
+#~ msgstr "Пусто :("
+
+#~ msgid "Путь от метро Лесная"
+#~ msgstr "Шлях від метро Лісова"
+
+#~ msgid "Путь от метро Черниговская"
+#~ msgstr "Шлях від метро Чернігівська"
+
+#~ msgid "Путь от улицы Красноткацкая"
+#~ msgstr "Шлях від вулиці Красноткацька"
+
+#~ msgid "Проложить маршрут"
+#~ msgstr "Проложити мартшрут"
