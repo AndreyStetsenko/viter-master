@@ -9,7 +9,8 @@ function kmtemp_styles_scripts() {
   wp_enqueue_style( 'slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css', array(), '1.9.0');
   wp_enqueue_style( 'base', get_template_directory_uri() . '/css/base.css', array(), '1.0');
   wp_enqueue_style( 'vendor', get_template_directory_uri() . '/css/vendor.css', array(), '1.0');
-  wp_enqueue_style( 'vendor', get_template_directory_uri() . '/css/fonts.css', array(), '1.0');
+  wp_enqueue_style( 'fonts', get_template_directory_uri() . '/css/fonts.css', array(), '1.0');
+  wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/fonts/avenirn/stylesheet.css', array(), '1.0');
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.css', array(), '1.0');
 
   // Register Scripts

@@ -890,7 +890,6 @@ input[type="button"].btn--secondary {
     border-color: #a557c5;
     color: #FFFFFF;
     border-radius: 0px;
-    margin: 0 auto;
 }
 
 .btn.btn--secondary:hover,
@@ -3777,7 +3776,6 @@ footer .row {
   line-height: 15px;
   text-align: left;
   opacity: .7;
-  color: #fff;
 }
 
 .music-card li a img,
@@ -3839,6 +3837,7 @@ footer .row {
   display: flex;
   width: 100%;
   margin-bottom: 10px;
+  background: #fff;
 }
 
 .slider-card_left {
@@ -3854,6 +3853,7 @@ footer .row {
 
 .slider-card_left-date {
   text-align: center;
+  color: #fff;
 }
 
 span.left-date_top, span.left-date_bot {
@@ -3877,7 +3877,6 @@ span.left-date_bot {
 }
 
 .slider-card_right-cont {
-  height: 100%;
   padding: 30px;
   font-size: 12px;
   color: #313131;

@@ -338,7 +338,7 @@
                 $.ajax({
 
                     type: "POST",
-                    url: "sendEmail.php",
+                    url: globalObject.url + "sendEmail.php",
                     data: $(form).serialize(),
                     beforeSend: function() {
 

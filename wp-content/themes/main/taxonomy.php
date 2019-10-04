@@ -10,7 +10,7 @@
         <div class="afisha">
             <div class="row ajax-tickets" style="opacity: 0">
                 <?php while (have_posts()): the_post() ?>
-                    <?php include "inc/ticket-item.php" ?>
+                    <?php include "inc/event-card.php" ?>
                 <?php endwhile ?>
             </div>
         </div>
