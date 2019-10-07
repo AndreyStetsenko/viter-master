@@ -1,28 +1,35 @@
+<?php
+/*
+    Template Name: Blog
+*/
+?>
 <?php get_header(); ?>
-<!-- основной контейнер -->
-<div class="main">
-<ul class="cat-post">
-<!-- определение категории и количество записей -->
-<?php $the_query = new WP_Query('cat=8&showposts=40'); ?>
-<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-<li>
-<!-- миниатюра записи -->
-<a href="<?php the_permalink() ?>"><?php echo get_the_post_thumbnail( $post->ID, 'thumbnail'); ?></a>
 
-<!-- заголовок записи -->
-<h2><a href='<?php the_permalink() ?>'><?php the_title(); ?></a></h2>
+<div class="news_page_arh">
 
-<!-- количество слов в анонсе (необязательно) -->
-<?php $content = get_the_content(); echo wp_trim_words( $content , '10' ); ?>
-
-</li>
-<?php endwhile; ?>
-
-<!-- функция для правильной работы условных тегов -->
-<?php wp_reset_query(); ?>
-</ul>
+  <div class="row clients-outer" data-aos="fade-up">
+    <div class="news_page_arh-title">
+      <h2>Новости</h2>
+      <?php if ( function_exists( 'dimox_breadcrumbs' ) ) dimox_breadcrumbs(); ?>
+    </div>
+    <ul class="music-card">
+      <?php if( have_posts() ){ while( have_posts() ){ the_post(); ?>
+        <li <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+          <a href="<?php the_permalink(); ?>" class="transition">
+            <?php the_post_thumbnail(); ?>
+            <div class="music-card_cont">
+              <h2><?php the_title(); ?></h2>
+              <p><?php
+  $text = strip_tags( get_the_content() );
+  echo mb_substr( $text, 0, 152 );
+  ?></p>
+            </div>
+          </a>
+        </li>
+        <?php }} ?>
+    </ul>
+    <!-- <button class="btn btn--secondary" onclick="location.href = 'news.html'">Больше</button> -->
+  </div> <!-- end clients-outer -->
 </div>
-<!-- функция вывода сайдбара -->
-<?php get_sidebar(); ?>
-<!-- функция вывода футера -->
+
 <?php get_footer(); ?>

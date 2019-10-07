@@ -13,8 +13,8 @@
       <div class="slider-card_right-cont">
         <div class="right-cont-left">
           <span class="slider-title"><?php the_title() ?></span>
-          <?php $city = wp_get_post_terms(get_the_ID(), 'city')[0]->name ?>
-          <span class="slider-geo"><?php echo $city ?></span>
+
+          <span class="slider-geo"></span>
           <span class="slider-main"><?php the_field('event-place') ?></span>
         </div>
         <div class="right-cont-right">

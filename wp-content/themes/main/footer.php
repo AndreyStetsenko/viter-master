@@ -16,45 +16,7 @@
 
           <h3 class="h6">Отправить сообщение</h3>
 
-          <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-              <fieldset>
-
-              <div class="form-field">
-                  <input name="contactName" type="text" id="contactName" placeholder="Ваше имя" value="" minlength="2" required="" aria-required="true" class="full-width">
-              </div>
-              <div class="form-field">
-                  <input name="contactEmail" type="email" id="contactEmail" placeholder="Ваш Email" value="" required="" aria-required="true" class="full-width">
-              </div>
-              <div class="form-field">
-                  <input name="contactSubject" type="text" id="contactSubject" placeholder="Тема" value="" class="full-width">
-              </div>
-              <div class="form-field">
-                  <textarea name="contactMessage" id="contactMessage" placeholder="Ваше сообщение" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-              </div>
-              <div class="form-field">
-                  <button class="full-width btn--primary">Отправить</button>
-                  <div class="submit-loader">
-                      <div class="text-loader">Отправка...</div>
-                      <div class="s-loader">
-                          <div class="bounce1"></div>
-                          <div class="bounce2"></div>
-                          <div class="bounce3"></div>
-                      </div>
-                  </div>
-              </div>
-
-              </fieldset>
-          </form>
-
-          <!-- contact-warning -->
-          <div class="message-warning">
-              Что-то пошло не так. Пожалуйста, попробуйте еще раз.
-          </div>
-
-          <!-- contact-success -->
-          <div class="message-success">
-              Ваше сообщение было отправлено, спасибо!<br>
-          </div>
+          <?php echo do_shortcode( '[contact-form-7 id="14510" title="Form footer"]' ); ?>
 
       </div> <!-- end contact-primary -->
 
@@ -63,30 +25,21 @@
 
               <h3 class="h6 hide-on-fullwidth">Контактная Информация</h3>
 
-              <div class="cinfo">
-                  <h5>Где меня найти</h5>
-                  <p>
-                      Киев, Хрещатик 22<br>
-                      02002 Украина
-                  </p>
-              </div>
+              <?php
+                $rows = get_field('contacts_footer', 'option');
+                if($rows)
+                {
+                	foreach($rows as $row)
+                	{
+                    echo '<div class="cinfo">';
+                		echo '<h5>' . $row['contacts_footer_title'] . '</h5>';
+                    echo '<p>' . $row['contacts_footer_inf'] . '</p>';
+                    echo '</div>';
+                	}
+                }
+                ?>
 
-              <div class="cinfo">
-                  <h5>Напишите нам</h5>
-                  <p>
-                      contact.viter@gmail.com<br>
-                      info.viter@gmail.com
-                  </p>
-              </div>
 
-              <div class="cinfo">
-                  <h5>Позвоните нам</h5>
-                  <p>
-                      Рабочий: +380 99 123 1234<br>
-                      Мобильный: +380 99 123 1234<br>
-                      Офис: +380 44 123 1234
-                  </p>
-              </div>
 
               <?php
                 $rows = get_field('top-social', 'option');
@@ -130,7 +83,7 @@
 <?php wp_footer(); ?>
 
 <script type="text/javascript">
-$(".slider").slick({
+$(".sli1der").slick({
 infinite: false,
 dots: false,
 autoplay: false,

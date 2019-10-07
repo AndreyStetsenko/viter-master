@@ -25,6 +25,10 @@
      </div>
 
     <div class="viter_body_netam" data-aos="fade-up">
-      <img src="images/viter_body.png" alt="Gena VITER">
+      <?php
+      $image = get_field('about_img_center', 'option');
+      if( !empty($image) ): ?>
+      <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+      <?php endif; ?>
     </div>
 </section> <!-- end s-media -->

@@ -100,10 +100,10 @@ if( !empty($image) ): ?>
 
     <div class="row home-content__main">
 
-        <h3>Gena</h3>
+        <h3><?php the_field('name_main', 'options'); ?></h3>
 
         <h1>
-            VITER
+            <?php the_field('surname_main', 'options'); ?>
         </h1>
 
     </div>

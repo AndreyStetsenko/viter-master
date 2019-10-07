@@ -12,11 +12,10 @@ if (!defined('ABSPATH')) {
 }
 
 const MTICKET_API_GATE = 'https://api.mticket.com.ua/gate1/';
-const MTICKET_API_LOGIN = 'mticket';
-const MTICKET_API_PASSWORD = '43ui98#4fck$;c=z';
-const MTICKET_AGENT_ID = 6;
-const MTICKET_WIDGET_ID = 22;
-const MTICKET_SITE_ID = 94;
+const MTICKET_API_LOGIN = 'citrus';
+const MTICKET_API_PASSWORD = 'h19li1pnj8';
+const MTICKET_AGENT_ID = 43;
+const MTICKET_WIDGET_ID = 307;
 
 const MTICKET_METHOD_LOGIN = 'login';
 const MTICKET_METHOD_SHOWS = 'shows';
@@ -37,12 +36,11 @@ register_setting('mticket-api', 'mticket_api_login', ['default' => MTICKET_API_L
 register_setting('mticket-api', 'mticket_api_password', ['default' => MTICKET_API_PASSWORD]);
 register_setting('mticket-api', 'mticket_agent_id', ['default' => MTICKET_AGENT_ID]);
 register_setting('mticket-api', 'mticket_widget_id', ['default' => MTICKET_WIDGET_ID]);
-register_setting('mticket-api', 'mticket_site_id', ['default' => MTICKET_SITE_ID]);
 
 function mticket_sync_page()
 {
-    $action = empty($_POST['action']) ? empty($_GET['action'] ? null : $_GET['action']) : $_POST['action'];
-    if ($action === 'sync'):
+    $action = empty($_POST['action']) ? (empty($_GET['action']) ? null : $_GET['action']) : $_POST['action'];
+    if ($action == 'sync'):
         echo ' <h2>Maestro Ticket System Api</h2>';
         mticket_sync();
         echo '<br/>Синхронизация прошла успешно<br/>';
@@ -109,12 +107,6 @@ function mticket_settings_page()
                     <th scope="row">Widget Id</th>
                     <td><input type="text" name="mticket_widget_id"
                                value="<?php echo get_option('mticket_widget_id'); ?>"/></td>
-                </tr>
-
-                <tr valign="top">
-                    <th scope="row">Site Id</th>
-                    <td><input type="text" name="mticket_site_id" value="<?php echo get_option('mticket_site_id'); ?>"/>
-                    </td>
                 </tr>
             </table>
 
@@ -215,7 +207,6 @@ function mticket_sync()
     // Получить список шоу
     $shows = mticket_request($api_gate . MTICKET_METHOD_SHOWS, [
         'sessionid' => $sessionId,
-        'siteId' => get_option('mticket_site_id') ? get_option('mticket_site_id') : MTICKET_SITE_ID,
     ]);
 
     if (empty($shows)) {
@@ -307,7 +298,7 @@ function mticket_sync()
                         'show_dates__time' => date('H:i', $time),
                         'show_dates__price' => $price,
                         'show_dates__sold' => $sold,
-                        'show_dates__buy' => 'javascript:mTicketWidget.open(' . MTICKET_WIDGET_ID . ', ' . MTICKET_SITE_ID . ', ' . $event['eventId'] . ')',
+                        'show_dates__buy' => 'javascript:mTicketWidget.open(' . MTICKET_WIDGET_ID . ', ' . $event['siteId'] . ', ' . $event['eventId'] . ')',
                     ];
 
                     add_row('show_dates', $row, $post_id);
@@ -392,7 +383,7 @@ function mticket_sync()
                         'show_dates__time' => date('H:i', $time),
                         'show_dates__price' => $price,
                         'show_dates__sold' => $sold,
-                        'show_dates__buy' => 'javascript:mTicketWidget.open(' . MTICKET_WIDGET_ID . ', ' . MTICKET_SITE_ID . ', ' . $event['eventId'] . ')',
+                        'show_dates__buy' => 'javascript:mTicketWidget.open(' . MTICKET_WIDGET_ID . ', ' . $event['siteId'] . ', ' . $event['eventId'] . ')',
                     ];
 
                     add_row('show_dates', $row, $post_id);
@@ -550,4 +541,3 @@ array(11) {
 Прийди та підтримай «Українських левиць!
 " }
 */
-
