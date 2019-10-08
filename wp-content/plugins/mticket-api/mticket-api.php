@@ -12,10 +12,10 @@ if (!defined('ABSPATH')) {
 }
 
 const MTICKET_API_GATE = 'https://api.mticket.com.ua/gate1/';
-const MTICKET_API_LOGIN = 'citrus';
-const MTICKET_API_PASSWORD = 'h19li1pnj8';
-const MTICKET_AGENT_ID = 43;
-const MTICKET_WIDGET_ID = 307;
+const MTICKET_API_LOGIN = 'Gena_Viter';
+const MTICKET_API_PASSWORD = 'txyiwrlpzcr';
+const MTICKET_AGENT_ID = 368;
+const MTICKET_WIDGET_ID = 321;
 
 const MTICKET_METHOD_LOGIN = 'login';
 const MTICKET_METHOD_SHOWS = 'shows';

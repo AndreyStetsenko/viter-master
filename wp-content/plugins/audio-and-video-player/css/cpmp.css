@@ -1,0 +1,7 @@
+#ms_avp .mejs-time-handle-content,
+#ms_avp .mejs-time-hovered,
+#ms_avp .mejs-time-float{display:none;}
+#ms_avp .mejs-time-rail{margin: 0;padding-top:5px;height:26px;}
+#ms_avp .mejs-controls .mejs-time-rail .mejs-time-current{width: 100%;}
+#ms_avp .mejs-container .mejs-controls .mejs-time{height:17px; padding: 8px 3px 0 3px;}
+#ms_avp .mejs-overlay-button{width:80px; height:80px;}

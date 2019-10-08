@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: codepeople-media-player\n"
+"POT-Creation-Date: 2019-03-23 03:00+0100\n"
+"PO-Revision-Date: 2019-03-23 03:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: CodePeople\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: builders/elementor-category.pb.php:12
+msgid "Audio and Video Player"
+msgstr ""
+
+#: builders/elementor.pb.php:41
+msgid "Audio Player"
+msgstr ""
+
+#: builders/elementor.pb.php:69 builders/elementor.pb.php:205
+msgid "Player's skin"
+msgstr ""
+
+#: builders/elementor.pb.php:80 builders/elementor.pb.php:216
+msgid "Player's shortcode"
+msgstr ""
+
+#: builders/elementor.pb.php:91 builders/elementor.pb.php:227
+msgid "Select files"
+msgstr ""
+
+#: builders/elementor.pb.php:177
+msgid "Video Player"
+msgstr ""
+
+#: builders/elementor.pb.php:315
+msgid "Player From Gallery"
+msgstr ""
+
+#: builders/elementor.pb.php:336
+msgid "Select the player"
+msgstr ""
+
+#: builders/elementor.pb.php:340
+msgid "Create or edit players"
+msgstr ""
+
+#: codepeople-media-player.clss.php:174 codepeople-media-player.php:66
+#: codepeople-media-player.php:67
+msgid "Audio And Video Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:175
+msgid ""
+"For any issues with the media player, go to our <a href=\"https://"
+"cpmediaplayer.dwbooster.com/contact-us\" target=\"_blank\">contact page</a> "
+"and leave us a message."
+msgstr ""
+
+#: codepeople-media-player.clss.php:177
+msgid ""
+"If you want test the premium version of CP Media Player go to the following "
+"links:<br/> <a href=\"http://demos.net-factor.com/audio-and-video/wp-login."
+"php\" target=\"_blank\">Administration area: Click to access the "
+"administration area demo</a><br/>\n"
+"\t\t<a href=\"http://demos.net-factor.com/audio-and-video/\" target=\"_blank"
+"\">Public page: Click to access the Public Page</a>"
+msgstr ""
+
+#: codepeople-media-player.clss.php:261
+msgid "Edit an existent player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:270
+msgid "Edit media player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:271
+msgid "Remove media player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:276
+msgid "- or -"
+msgstr ""
+
+#: codepeople-media-player.clss.php:286
+msgid "Create new one"
+msgstr ""
+
+#: codepeople-media-player.clss.php:288
+msgid "Audio"
+msgstr ""
+
+#: codepeople-media-player.clss.php:288
+msgid "Video"
+msgstr ""
+
+#: codepeople-media-player.clss.php:288
+msgid "Create new media player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:293 codepeople-media-player.clss.php:654
+msgid ""
+"The PayPal settings are available only in the commercial version of <a href="
+"\"https://cpmediaplayer.dwbooster.com/download\" target=\"_blank\">Audio and "
+"Video Player</a>."
+msgstr ""
+
+#: codepeople-media-player.clss.php:295
+msgid "For sale a file associated to your player, complete the PayPal data."
+msgstr ""
+
+#: codepeople-media-player.clss.php:296
+msgid ""
+"It is possible to create the media player with samples of audio or video "
+"files, and then associate a full version of files for sale."
+msgstr ""
+
+#: codepeople-media-player.clss.php:298
+msgid "PayPal settings"
+msgstr ""
+
+#: codepeople-media-player.clss.php:302
+msgid "Enable Paypal Payments?"
+msgstr ""
+
+#: codepeople-media-player.clss.php:307
+msgid "Enabling the Sandbox?"
+msgstr ""
+
+#: codepeople-media-player.clss.php:312
+msgid "Paypal email"
+msgstr ""
+
+#: codepeople-media-player.clss.php:317
+msgid "Currency"
+msgstr ""
+
+#: codepeople-media-player.clss.php:324
+msgid "Currency Symbol"
+msgstr ""
+
+#: codepeople-media-player.clss.php:329
+msgid "Paypal language"
+msgstr ""
+
+#: codepeople-media-player.clss.php:335
+msgid "Paypal button for instant purchases"
+msgstr ""
+
+#: codepeople-media-player.clss.php:340
+msgid "Download link valid for"
+msgstr ""
+
+#: codepeople-media-player.clss.php:341
+msgid "day(s)"
+msgstr ""
+
+#: codepeople-media-player.clss.php:345
+msgid "Purchase notifications"
+msgstr ""
+
+#: codepeople-media-player.clss.php:348
+msgid "Notification \"from\" email"
+msgstr ""
+
+#: codepeople-media-player.clss.php:353
+msgid "Send notification to email"
+msgstr ""
+
+#: codepeople-media-player.clss.php:358
+msgid "Email subject confirmation to user"
+msgstr ""
+
+#: codepeople-media-player.clss.php:363
+msgid "Email confirmation to user"
+msgstr ""
+
+#: codepeople-media-player.clss.php:368
+msgid "Email subject notification to admin"
+msgstr ""
+
+#: codepeople-media-player.clss.php:373
+msgid "Email notification to admin"
+msgstr ""
+
+#: codepeople-media-player.clss.php:377
+msgid "Save PayPal settings"
+msgstr ""
+
+#: codepeople-media-player.clss.php:391
+msgid "Create Media Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:428
+msgid "Update Media Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:457
+msgid ""
+"For more information go to the <a href=\"https://cpmediaplayer.dwbooster.com"
+"\" target=\"_blank\">Audio And Video Player</a> plugin page"
+msgstr ""
+
+#: codepeople-media-player.clss.php:460
+msgid "Player shortcode"
+msgstr ""
+
+#: codepeople-media-player.clss.php:463
+msgid "General Settings"
+msgstr ""
+
+#: codepeople-media-player.clss.php:466
+msgid "Select the media player skin"
+msgstr ""
+
+#: codepeople-media-player.clss.php:474
+msgid "Configure media player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:479
+msgid "Player name"
+msgstr ""
+
+#: codepeople-media-player.clss.php:488
+msgid "Width:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:491 codepeople-media-player.clss.php:499
+msgid "Value should be greater than or equal to:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:496
+msgid "Height:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:504
+msgid "Autoplay:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:507
+msgid "Some devices don't allow autoplay"
+msgstr ""
+
+#: codepeople-media-player.clss.php:512
+msgid "Loop:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:520
+msgid "Preload:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:528
+msgid "Show playlist:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:540
+msgid "Playlist"
+msgstr ""
+
+#: codepeople-media-player.clss.php:547
+msgid "Enter"
+msgstr ""
+
+#: codepeople-media-player.clss.php:547
+msgid "data"
+msgstr ""
+
+#: codepeople-media-player.clss.php:553
+msgid "Title"
+msgstr ""
+
+#: codepeople-media-player.clss.php:566
+msgid "Select the item file"
+msgstr ""
+
+#: codepeople-media-player.clss.php:566
+msgid "Select File"
+msgstr ""
+
+#: codepeople-media-player.clss.php:572
+msgid "Select a"
+msgstr ""
+
+#: codepeople-media-player.clss.php:574
+msgid "from Media Library or enter the URL to the"
+msgstr ""
+
+#: codepeople-media-player.clss.php:576
+msgid ""
+"file directly on field. If the Media Library is empty, go to the <a href="
+"\"media-new.php\">Media Library</a> and upload the files."
+msgstr ""
+
+#: codepeople-media-player.clss.php:581
+msgid "[+] additional attributes"
+msgstr ""
+
+#: codepeople-media-player.clss.php:584
+msgid "Associated link:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:593
+msgid "Poster:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:597
+msgid "Select the item poster"
+msgstr ""
+
+#: codepeople-media-player.clss.php:597
+msgid "Select Poster"
+msgstr ""
+
+#: codepeople-media-player.clss.php:601
+msgid ""
+"Select a poster image from Media Library or enter the URL to the poster file "
+"directly on field. If the Media Library is empty, go to the <a href=\"media-"
+"new.php\">Media Library</a> and upload the files."
+msgstr ""
+
+#: codepeople-media-player.clss.php:609
+msgid "Subtitles:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:614
+msgid "Lang: "
+msgstr ""
+
+#: codepeople-media-player.clss.php:621
+msgid ""
+"Set the URL to the subtitle file directly on field. If the language field is "
+"omitted, the language is inferred from subtitle location's field"
+msgstr ""
+
+#: codepeople-media-player.clss.php:630
+msgid "Add / Update item on playlist"
+msgstr ""
+
+#: codepeople-media-player.clss.php:631
+msgid "Clear"
+msgstr ""
+
+#: codepeople-media-player.clss.php:657
+msgid "For Sale"
+msgstr ""
+
+#: codepeople-media-player.clss.php:663
+msgid "Select the file:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:668
+msgid "Select file"
+msgstr ""
+
+#: codepeople-media-player.clss.php:674
+msgid "Enter price:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:684
+msgid "Promotional text:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:713
+msgid "New Audio Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:714
+msgid "New Video Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:715
+msgid "Insert Player From Gallery"
+msgstr ""
+
+#: codepeople-media-player.clss.php:745
+msgid "Select the player to insert:"
+msgstr ""
+
+#: codepeople-media-player.clss.php:747
+msgid "You must to define a media player before use it on page/post."
+msgstr ""
+
+#: codepeople-media-player.clss.php:773
+msgid "Insert media player on your post/page"
+msgstr ""
+
+#: codepeople-media-player.clss.php:775
+msgid "Create or Edit a Player"
+msgstr ""
+
+#: codepeople-media-player.clss.php:816
+msgid "Select at least a media file or player (if appropriate)"
+msgstr ""
+
+#: codepeople-media-player.php:53
+msgid "Settings"
+msgstr ""

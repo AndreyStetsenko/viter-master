@@ -10,7 +10,7 @@ function kmtemp_styles_scripts() {
   wp_enqueue_style( 'vendor', get_template_directory_uri() . '/css/vendor.css', array(), '1.0');
   wp_enqueue_style( 'fonts', get_template_directory_uri() . '/css/fonts.css', array(), '1.0');
   wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/fonts/avenirn/stylesheet.css', array(), '1.0');
-  wp_enqueue_style( 'magnific_css', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css', array(), '0.9.9');
+  wp_enqueue_style( 'magnific_css', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css', array(), '1.1.0');
   wp_enqueue_style( 'animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css', array(), '3.2.0');
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.css', array(), '1.0');
 
@@ -20,7 +20,7 @@ function kmtemp_styles_scripts() {
   wp_enqueue_script('plugins', get_template_directory_uri() . '/js/plugins.js', array(), '1.0', true);
   wp_enqueue_script('tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js', array(), '1.19.0', true);
   wp_enqueue_script('timelinemax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js', array(), '1.19.0', true);
-  wp_enqueue_script('magnific', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js', array(), '0.9.9', true);
+  wp_enqueue_script('magnific', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js', array(), '1.1.0', true);
   // wp_enqueue_script('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array(), '1.9.0', true);
   wp_enqueue_script('main_js', get_template_directory_uri() . '/js/main.js', array(), '1.0', true);
 
@@ -58,75 +58,19 @@ function main_setup()
     // add_image_size('slider-1', 1920, 700, true);
     // add_image_size('254x360', 254, 360, true);
 
-    register_nav_menus(array(
-        'primary' => 'Main Menu',
-        'mobile' => 'Mobile Menu',
-        'footer_one' => 'Footer one',
-        'footer_two' => 'Footer two',
-        'footer_three' => 'Footer three',
-    ));
+    // register_nav_menus(array(
+    // 	'top-menu'    => 'Верхнее меню',    //Название месторасположения меню в шаблоне
+    // 	'bottom-menu' => 'Нижнее меню'      //Название другого месторасположения меню в шаблоне
+    // ));
 
-    function mainMenu()
-    {
-        $args = array(
-            'menu' => 'Main menu',
-            'menu_class' => 'd-flex main-nav',
-            'theme_location' => 'primary'
-        );
-        wp_nav_menu($args);
-    }
-
-    // function mobileMenu()
-    // {
-    //     $options = array(
-    //         'theme_location' => 'mobile',
-    //         'container' => false,
-    //         'echo' => false,
-    //         'fallback_cb' => 'fall_back_menu'
-    //     );
-    //
-    //     $menu = wp_nav_menu($options);
-    //
-    //     echo preg_replace(array(
-    //         '#^<ul[^>]*>#',
-    //         '#</ul>$#'
-    //     ), '', $menu);
-    // }
-
-    function footerOne()
-    {
-        $args = array(
-            'theme_location' => 'footer_one',
-            'menu_class' => 'footer-menu',
-            'container' => false,
-        );
-        wp_nav_menu($args);
-    }
-
-    function footerTwo()
-    {
-        $args = array(
-            'theme_location' => 'footer_two',
-            'menu_class' => 'footer-menu',
-            'container' => false,
-        );
-        wp_nav_menu($args);
-    }
-
-    function footerThree()
-    {
-        $args = array(
-            'theme_location' => 'footer_three',
-            'menu_class' => 'footer-menu',
-            'container' => false,
-        );
-        wp_nav_menu($args);
-    }
-
-    // HTML5 support; mainly here to get rid of some nasty default styling that WordPress used to inject
-    // add_theme_support('html5', array('search-form', 'gallery'));
 }
 
+register_nav_menus(array(
+  'top-menu'    => 'Верхнее меню',    //Название месторасположения меню в шаблоне
+  'bottom-menu' => 'Нижнее меню'      //Название другого месторасположения меню в шаблоне
+));
+
+add_theme_support( 'menus' );
 // add_action('after_setup_theme', 'main_setup', 11);
 //
 // function icon($name, $class = '', $return = false)
@@ -149,6 +93,8 @@ if (function_exists('acf_add_options_page')) {
         'menu_slug' => 'theme-general-settings'
     ));
 }
+
+
 
 // rename posts category
 function edit_admin_menus()

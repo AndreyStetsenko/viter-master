@@ -23,7 +23,7 @@ echo mb_substr( $text, 0, 152 );
           </li>
           <?php }} ?>
       </ul>
-      <button class="btn btn--secondary" onclick="location.href = 'news.html'">Больше</button>
+      <a class="btn btn--secondary" <?php the_category('bez-rubriki'); ?>
     </div> <!-- end clients-outer -->
 
     <div class="about__line"></div>

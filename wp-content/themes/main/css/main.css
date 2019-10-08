@@ -85,6 +85,10 @@ body {
     padding: 0;
 }
 
+#auto-iframe {
+  height: 100vh;
+}
+
 
 /* -------------------------------------------------------------------
  * ## links
@@ -2605,7 +2609,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-news {
     background: #FFFFFF;
-    padding: 0 0 15rem 0;
+    padding: 0 0 8rem 0;
     min-height: 800px;
     position: relative;
 }
@@ -3634,6 +3638,61 @@ footer .row {
     color: #FFFFFF;
 }
 
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.popuptext {
+  display: table;
+}
+.popuptext p {
+  margin-bottom: 10px;
+}
+.popuptext span {
+  font-weight: bold;
+  float: right;
+}
+/* Popup Text */
+
+/* Icon CSS */
+.item {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-bottom: -9px;
+}
+.item i {
+  display: none;
+  font-size: 4rem;
+  color: #FFF;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.item a {
+  display: block;
+  width: 100%;
+}
+.item a:hover:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.item a:hover i {
+  display: block;
+  z-index: 2;
+}
 
 /* -------------------------------------------------------------------
  * responsive:
@@ -3959,6 +4018,14 @@ span.left-date_bot {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+.news-block .news_page_arh-title h2, .news-block .breadcrumbs__current, .news-block .breadcrumbs a {
+  color: #363636 !important;
+}
+
+.news-block .news_page_arh-title {
+  padding: 0 0 5px !important;
 }
 
 .news_page_arh-title {

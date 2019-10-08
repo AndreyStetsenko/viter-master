@@ -33,13 +33,14 @@
                 	{
                     echo '<div class="cinfo">';
                 		echo '<h5>' . $row['contacts_footer_title'] . '</h5>';
-                    echo '<p>' . $row['contacts_footer_inf'] . '</p>';
+                    echo '<p>' . $row['contacts_footer_inf1'] . '<br>';
+                    echo '' . $row['contacts_footer_inf2'] . '<br>';
+                    echo '' . $row['contacts_footer_inf3'] . '<br>';
+                    echo '' . $row['contacts_footer_inf4'] . '</p>';
                     echo '</div>';
                 	}
                 }
                 ?>
-
-
 
               <?php
                 $rows = get_field('top-social', 'option');

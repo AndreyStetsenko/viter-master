@@ -16,6 +16,8 @@
  <body id="top" <?php body_class(); ?>>
    <header class="s-header">
 
+
+
      <div class="mini-player">
        <div class="track_info_wrapper">
          <div class="track_info">
@@ -41,7 +43,7 @@
                <?php wp_nav_menu( array(
                  'menu_class'      => 'header-nav__list',
                  'depth'           => 1,
-                 'theme_location'  => 'top'
+                 'theme_location'  => 'top-menu'
                )); ?>
 
                <?php

@@ -691,15 +691,15 @@ $('.back_btn').click(function(){
 });
 
 $(document).ready(function() {
-
-  $('.popup-link').magnificPopup({
-    removalDelay: 300,
-    type: 'image',
-    callbacks: {
-    beforeOpen: function() {
-       this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure animated ' + this.st.el.attr('data-effect'));
-    }
-  },
+  $('.popup-youtube').magnificPopup({
+    disableOn: 320,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: true
   });
-
+});
+$('.item').magnificPopup({
+  delegate: 'a',
 });

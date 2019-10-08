@@ -14,12 +14,13 @@
         <div class="right-cont-left">
           <span class="slider-title"><?php the_title() ?></span>
 
-          <span class="slider-geo"></span>
+          <span class="slider-geo"><?php the_field('event-address') ?></span>
           <span class="slider-main"><?php the_field('event-place') ?></span>
         </div>
         <div class="right-cont-right">
           <span class="slider-price"><?php the_field('event-price') ?> грн</span>
-          <button class="btn btn--event" onclick="window.open('<?= getEventUrl($future_dates[0]['show_dates__buy']) ?>')">Билеты</button>
+          <a class="btn btn--event" href="<?= getEventUrl($future_dates[0]['show_dates__buy']) ?>"><?php _e('Купити', 'main') ?>
+          <span class="button-hide"><?php _e('Квиток', 'main') ?></span></a>
         </div>
       </div>
     </div>

@@ -17,6 +17,12 @@ $baseUrl = get_field('widget_base_url', 'options') ?: 'https://widget.kontramark
 $link = $baseUrl . $lang . 'widget' . $_GET['widgetId'] . 'site' . $_GET['siteId'] . '/widget/event/' . $_GET['eventId'];
 ?>
 
+<style media="screen">
+  .header-menu-toggle {
+    background: #000;
+  }
+</style>
+
 <div id="widget-iframe" class="widget-iframe-1">
     <iframe src="<?=$link?>" frameborder="0" width="100%" id="auto-iframe" class="widget-iframe-1"></iframe>
 </div>
